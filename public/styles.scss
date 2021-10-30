@@ -1,0 +1,71 @@
+body {
+  width: 100%; 
+  height: 100%; 
+  background-color: #FFDAB9;
+  box-sizing: border-box;
+  display: flex; 
+  justify-content: space-around; 
+  flex-direction: column; 
+  align-items: center; 
+  margin: 0; 
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+  text-align: center;
+}
+
+.header {
+  display: flex; 
+  justify-content: space-around;
+  align-items: center; 
+  flex-direction: column;
+}
+
+.game-container {
+  display: grid; 
+  grid-template-columns: repeat(7, auto); 
+  justify-content: space-around; 
+  align-items: center; 
+  margin: 0; 
+  padding: 0;
+  width: 80vw;   
+}
+
+img {
+  width: 100px; 
+  height: 100px; 
+  border-radius: 15px; 
+}
+
+.wasp-card {
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-around;
+  align-items: center; 
+  border: 2px solid yellow;
+  border-radius: 15px; 
+  margin: 20px;
+  padding: 20px; 
+  background: #F0E68C;  
+  text-align: center; 
+}
+
+.wasp-name {
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 1200px) {
+  .game-container {
+    grid-template-columns: repeat(4, auto);
+  }
+  body {
+    height: fit-content; 
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .game-container {
+    grid-template-columns: repeat(2, auto);
+  }
+  body {
+    height: auto; 
+  }
+}

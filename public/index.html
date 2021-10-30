@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href = "./styles.css"/>
+  <title>Wasp Game Tech Test</title>
+</head>
+<body>
+  <div class="header">
+    <h1>Wasp Game Tech Test</h1> 
+    <p> Rules - The game ends when all wasps are dead. <br> If the queen wasp dies, then they all die. </p>
+    <button class="hit-btn"> Hit a random wasp! </button>
+    <div class="hit-log"> </div>
+    <div class="death-log"> </div>
+  </div>
+    <div class="game-container"> 
+    <div class = "wasp-card">
+      <img src = "https://images.unsplash.com/photo-1501675052217-05c01899bf48?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80"> </img> 
+      <p class="wasp-name"> Queen Wasp </p>
+      <span> Health: </span> <span class = "wasp-health">80</span>
+    </div> 
+    <div class = "wasp-card">
+      <img src = "https://images.unsplash.com/photo-1584709261141-f32daef6aa9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1103&q=80"> </img> 
+      <p class="wasp-name"> Worker Wasp #1 </p>
+      <span> Health: </span> <span class = "wasp-health">68</span>
+    </div>
+    <div class = "wasp-card">
+      <img src = "https://images.unsplash.com/photo-1584709261141-f32daef6aa9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1103&q=80"> </img> 
+      <p class="wasp-name"> Worker Wasp #2 </p>
+      <span> Health: </span> <span class = "wasp-health">68</span>
+    </div>
+    <div class = "wasp-card">
+      <img src = "https://images.unsplash.com/photo-1584709261141-f32daef6aa9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1103&q=80"> </img> 
+      <p class="wasp-name"> Worker Wasp #3 </p>
+      <span> Health: </span> <span class = "wasp-health">68</span>
+    </div>
+    <div class = "wasp-card">
+      <img src = "https://images.unsplash.com/photo-1584709261141-f32daef6aa9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1103&q=80"> </img> 
+      <p class="wasp-name"> Worker Wasp #4 </p>
+      <span> Health: </span> <span class = "wasp-health">68</span>
+    </div>
+    <div class = "wasp-card">
+      <img src = "https://images.unsplash.com/photo-1584709261141-f32daef6aa9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1103&q=80"> </img> 
+      <p class="wasp-name"> Worker Wasp #5 </p>
+      <span> Health: </span> <span class = "wasp-health">68</span>
+    </div>
+    <div class = "wasp-card">
+      <img src = "https://images.unsplash.com/photo-1558992500-0446f0a47538?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"> </img> 
+      <p class="wasp-name"> Drone Wasp #1 </p>
+      <span> Health: </span> <span class = "wasp-health">60</span>
+    </div>
+    <div class = "wasp-card">
+      <img src = "https://images.unsplash.com/photo-1558992500-0446f0a47538?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"> </img> 
+      <p class="wasp-name"> Drone Wasp #2 </p>
+      <span> Health: </span> <span class = "wasp-health">60</span>
+    </div>
+    <div class = "wasp-card">
+      <img src = "https://images.unsplash.com/photo-1558992500-0446f0a47538?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"> </img> 
+      <p class="wasp-name"> Drone Wasp #3 </p>
+      <span> Health: </span> <span class = "wasp-health">60</span>
+    </div>
+    <div class = "wasp-card">
+      <img src = "https://images.unsplash.com/photo-1558992500-0446f0a47538?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"> </img> 
+      <p class="wasp-name"> Drone Wasp #4 </p>
+      <span> Health: </span> <span class = "wasp-health">60</span>
+    </div>
+    <div class = "wasp-card">
+      <img src = "https://images.unsplash.com/photo-1558992500-0446f0a47538?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"> </img> 
+      <p class="wasp-name"> Drone Wasp #5 </p>
+      <span> Health: </span> <span class = "wasp-health">60</span>
+    </div>
+    <div class = "wasp-card">
+      <img src = "https://images.unsplash.com/photo-1558992500-0446f0a47538?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"> </img> 
+      <p class="wasp-name"> Drone Wasp #6 </p>
+      <span> Health: </span> <span class = "wasp-health">60</span>
+    </div>
+    <div class = "wasp-card">
+      <img src = "https://images.unsplash.com/photo-1558992500-0446f0a47538?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"> </img> 
+      <p class="wasp-name"> Drone Wasp #7 </p>
+      <span> Health: </span> <span class = "wasp-health">60</span>
+    </div>
+    <div class = "wasp-card">
+      <img src = "https://images.unsplash.com/photo-1558992500-0446f0a47538?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80"> </img> 
+      <p class="wasp-name"> Drone Wasp #8 </p>
+      <span> Health: </span> <span class = "wasp-health">60</span>
+    </div>
+  </div>
+</body>
+<script src = "../src/main.js"> </script>
+</html>
